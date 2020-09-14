@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubjectActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbAdminAddSub"
+        app:title="Add Subject"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etAdminSubName"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Subject Name"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etAdminSubId"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Subject ID"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp_adminSub_branch"
+            android:backgroundTint="@color/primary_dark"
+            android:dropDownWidth="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/sp_adminSub_sem"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:dropDownWidth="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddSub"
+        android:background="@color/primary"
+        android:textSize="15sp"
+        android:text="ADD SUBJECT"
+        android:onClick="btnClicked"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

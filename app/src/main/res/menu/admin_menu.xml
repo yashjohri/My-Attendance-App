@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/grp1">
+
+        <item
+            android:id="@+id/adminBranch"
+            android:title="Branches"/>
+
+        <item
+            android:id="@+id/adminSubjects"
+            android:title="Subjects"/>
+
+        <item
+            android:id="@+id/adminBatch"
+            android:title="Batches"/>
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/grp2">
+
+        <item
+            android:id="@+id/adminTeachers"
+            android:title="Teachers"/>
+
+        <item
+            android:id="@+id/adminStudents"
+            android:title="Students"/>
+
+        <item
+            android:id="@+id/adminAssign"
+            android:title="Assign"/>
+
+        <item
+            android:id="@+id/adminViewAttendance"
+            android:title="View Attendance"/>
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/grp3">
+
+        <item
+            android:id="@+id/adminSettings"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/adminLogout"
+            android:title="Logout"/>
+    </group>
+
+</menu>

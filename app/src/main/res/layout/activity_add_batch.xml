@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBatchActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbAdminAddBatch"
+        app:title="Add Batch"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminBatchName"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Batch name"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp_adminBatch_branch"
+            android:backgroundTint="@color/primary_dark"
+            android:dropDownWidth="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/sp_adminBatch_sem"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:dropDownWidth="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddBatch"
+        android:background="@color/primary"
+        android:textSize="15sp"
+        android:text="ADD BATCH"
+        android:onClick="btnClicked"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

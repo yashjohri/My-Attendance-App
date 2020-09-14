@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/teacherTakeAtt"
+            android:title="Take Attendance"/>
+
+        <item
+            android:id="@+id/teacherViewAtt"
+            android:title="View Attendance"/>
+
+        <item
+            android:id="@+id/teacherRecords"
+            android:title="Records"/>
+
+        <item
+            android:id="@+id/teacherSettings"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/adminLogout"
+            android:title="Logout"/>
+    </group>
+
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeacherActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbAdminAddTeacher"
+        app:title="Add Teacher"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminTeacherName"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Name"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminTeacherId"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="ID"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminTeacherEmail"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Email"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminTeacherNumber"
+        android:inputType="phone"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Contact number"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminTeacherOcc"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Occupation"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAddTeacher"
+        android:background="@color/primary"
+        android:textSize="15sp"
+        android:text="ADD TEACHER"
+        android:onClick="btnClicked"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

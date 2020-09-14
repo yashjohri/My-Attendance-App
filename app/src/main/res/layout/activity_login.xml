@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="LOGIN"
+        android:id="@+id/tbLogin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etLoginUserName"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Email"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Password"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:background="@color/primary"
+            android:textSize="15sp"
+            android:text="LOGIN"
+            android:onClick="btnClicked"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="OR"
+            android:textColor="@color/primary_text"
+            android:textSize="15sp"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btnLoginCreate"
+            android:onClick="btnClicked"
+            android:text="REGISTER HERE"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"
+            android:textSize="15sp"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

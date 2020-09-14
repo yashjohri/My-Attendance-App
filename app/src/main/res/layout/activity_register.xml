@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbRegister"
+        app:title="REGISTER"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioButton
+            android:onClick="rbtnClicked"
+            android:id="@+id/rbtnAdmin"
+            android:checked="true"
+            android:text="Admin"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:textColorHighlight="@color/primary"
+            android:buttonTint="@color/primary"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:onClick="rbtnClicked"
+            android:id="@+id/rbtnTS"
+            android:text="Teacher / Student"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:textColorHighlight="@color/primary"
+            android:buttonTint="@color/primary"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        
+    </RadioGroup>
+    
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_Admin"
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etRegisterName"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textColor="@color/primary_text"
+                android:hint="Your name"
+                android:textColorHint="@color/secondary_text"
+                android:textColorHighlight="@color/secondary_text"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etRegisterOccupation"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textColor="@color/primary_text"
+                android:hint="Your Occupation"
+                android:textColorHint="@color/secondary_text"
+                android:textColorHighlight="@color/secondary_text"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etRegisterOrg"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:textColor="@color/primary_text"
+                android:hint="College name"
+                android:textColorHint="@color/secondary_text"
+                android:textColorHighlight="@color/secondary_text"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etRegisterOrgId"
+                android:inputType="text|number"
+                android:textSize="15sp"
+                android:textColor="@color/primary_text"
+                android:hint="College ID"
+                android:textColorHint="@color/secondary_text"
+                android:textColorHighlight="@color/secondary_text"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etRegisterEmail"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"
+                android:textColor="@color/primary_text"
+                android:hint="Email"
+                android:textColorHint="@color/secondary_text"
+                android:textColorHighlight="@color/secondary_text"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:textColor="@color/primary_text"
+                android:hint="Password"
+                android:textColorHint="@color/secondary_text"
+                android:textColorHighlight="@color/secondary_text"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:background="@color/primary"
+                android:textSize="15sp"
+                android:text="REGISTER AS ADMIN"
+                android:onClick="btnClicked"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_TS"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etRegisterTSID"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Your ID"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etRegisterTSOrgID"
+            android:inputType="text|number"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Your Organization's ID"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etRegisterTSPassword"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColor="@color/primary_text"
+            android:hint="Password"
+            android:textColorHint="@color/secondary_text"
+            android:textColorHighlight="@color/secondary_text"
+            android:backgroundTint="@color/primary_dark"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnRegisterTS"
+            android:background="@color/primary"
+            android:textSize="15sp"
+            android:text="REGISTER AS TEACHER/STUDENT"
+            android:onClick="btnClicked"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

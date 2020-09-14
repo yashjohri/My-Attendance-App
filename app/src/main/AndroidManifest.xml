@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.johri.myattendance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EditTeacherActivity" android:windowSoftInputMode="adjustPan" ></activity>
+        <activity android:name=".EditStudentActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".StudentSubjectsActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".StudentNavActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminAttendanceActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminViewActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".TeacherRecordsActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ClassAttendanceActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".TeacherViewActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddAttendanceActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".TakeAttendanceActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".TeacherNavActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddTeacherSubjectActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminAssignActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddStudentActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminStudentsActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminTeachersActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddTeacherActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddBatchActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminBatchActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".AddSubjectActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminSubjectsActivity" android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".BranchActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EditAdminActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminNavActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RegisterActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTeacherActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbTeacherSettings"
+        app:title="Settings"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnChooseImageTeacher"
+            android:src="@drawable/ic_account_pic"
+            android:onClick="openChooser"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTeacherEmail"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Email"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etTeacherPass"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:hint="Password"
+        android:textColorHint="@color/secondary_text"
+        android:textColorHighlight="@color/secondary_text"
+        android:backgroundTint="@color/primary_dark"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:background="@color/primary"
+        android:textSize="15sp"
+        android:text="Save"
+        android:onClick="btnClicked"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
